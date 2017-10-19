@@ -1,0 +1,7 @@
+<%= simple_form_for @pokemon, url: trainer_path(current_trainer) do |f| %>
+  <%= f.input :name %>
+  <%= f.button :submit %>
+<% end %>
+</br>
+
+<%= link_to "Back", trainer_path(current_trainer) %>
